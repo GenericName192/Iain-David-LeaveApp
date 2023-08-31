@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Holiday List</title>
+  </head>
+  <body>
+    <h1>{{test}}</h1>
+    <h1>Holiday List</h1>
+    <h2>UK Holidays</h2>
+    <ul>
+      {% for date, name in uk_holidays %}
+      <li>{{ date }}: {{ name }}</li>
+      {% endfor %}
+    </ul>
+
+    <h2>Canada Holidays</h2>
+    <ul>
+      {% for date, name in ca_holidays %}
+      <li>{{ date }}: {{ name }}</li>
+      {% endfor %}
+    </ul>
+
+    <h2>Australia Holidays</h2>
+    <ul>
+      {% for date, name in au_holidays %}
+      <li>{{ date }}: {{ name }}</li>
+      {% endfor %}
+    </ul>
+
+    <h2>USA Holidays</h2>
+    <ul>
+      {% for date, name in us_holidays %}
+      <li>{{ date }}: {{ name }}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+{% extends "base.html" %}{% block content %}
+<main>
+  <div class="container">
+    <!-- Content for the Dashboard section -->
+    <section id="dashboard" class="content-section">
+      <h2>Welcome, Blank User</h2>
+      <img
+        src="https://th.bing.com/th/id/OIP.Cl56H6WgxJ8npVqyhefTdQHaHa?pid=ImgDet&rs=1"
+        alt="Profile Picture"
+        class="profile-pic"
+      />
+
+      <div class="leave-status">
+        <div>
+          <h3>Vacation</h3>
+          <p>Booked: 5 days</p>
+          <p>Used: 3 days</p>
+          <p>Left: 2 days</p>
+        </div>
+
+        <div>
+          <h3>Sick Leave</h3>
+          <p>Booked: 3 days</p>
+          <p>Used: 1 day</p>
+          <p>Left: 2 days</p>
+        </div>
+
+        <!-- Add more leave types as needed -->
+      </div>
+
+      <div class="leave-dropdown">
+        <label for="leave-type">Select Leave Type:</label>
+        <select id="leave-type" onchange="showLeaveInfo()">
+          <option value="vacation">Vacation</option>
+          <option value="sick_leave">Sick Leave</option>
+          <!-- Add more options for other leave types -->
+        </select>
+        <div id="leave-info"></div>
+      </div>
+    </section>
+  </div>
+</main>
+
+{% endblock %}

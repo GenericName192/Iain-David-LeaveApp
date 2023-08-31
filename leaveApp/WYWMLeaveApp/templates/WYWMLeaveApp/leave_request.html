@@ -1,0 +1,31 @@
+{% extends "base.html" %}{% block content %}
+<main>
+  <div class="container">
+    <!-- Content for the Leave Request section -->
+    <section id="leave_request" class="content-section">
+      <h2>Leave Request</h2>
+      <form>
+        <label for="leave_type">Leave Type:</label>
+        <select id="leave_type" name="leave_type" required>
+          <option value="">Select Leave Type</option>
+          <option value="vacation">Vacation</option>
+          <option value="sick_leave">Sick Leave</option>
+          <!-- Add more options for other leave types -->
+        </select>
+
+        <label for="start_date">Start Date:</label>
+        <input type="date" id="start_date" name="start_date" required />
+
+        <label for="end_date">End Date:</label>
+        <input type="date" id="end_date" name="end_date" required />
+
+        <label for="reason">Reason for Leave:</label>
+        <textarea id="reason" name="reason" rows="4" required></textarea>
+
+        <button type="submit">Submit Request</button>
+      </form>
+    </section>
+  </div>
+</main>
+
+{% endblock %}

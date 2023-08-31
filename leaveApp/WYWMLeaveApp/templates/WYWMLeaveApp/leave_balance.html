@@ -1,0 +1,36 @@
+{% extends "base.html" %}{% block content %}
+<main>
+  <div class="container">
+    <!-- Content for the Leave Balance section -->
+    <section id="leave_balance" class="content-section">
+      <h2>Leave Balance</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Leave Type</th>
+            <th>Available Days</th>
+            <th>Used Days</th>
+            <th>Remaining Days</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Vacation</td>
+            <td>20</td>
+            <td>10</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Sick Leave</td>
+            <td>12</td>
+            <td>4</td>
+            <td>8</td>
+          </tr>
+          <!-- Add more rows for other leave types -->
+        </tbody>
+      </table>
+    </section>
+  </div>
+</main>
+
+{% endblock %}
